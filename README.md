@@ -1,3 +1,6 @@
+# NEXT JS BLOG APP
+visit the website [here](https://nextjs-blog-sigma-wheat.vercel.app/)
+
 This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
 ## Styling 
@@ -43,3 +46,7 @@ export async function getServerSideProps(context) {
 ```
 
 - `getServerSideProps(contenxt)` & `getStaticProps(props)` will be called automatically by nextjs on creating component so no need to called manually
+
+
+<!-- THINGS TO LEARN NEXT -->
+https://nextjs.org/learn/basics/deploying-nextjs-app/finally
