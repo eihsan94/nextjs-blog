@@ -1,7 +1,35 @@
 # NEXT JS BLOG APP
+## ABOUT
 visit the website [here](https://nextjs-blog-sigma-wheat.vercel.app/)
 
 This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+
+## Project Structure
+
+<pre>
+components/                  shared components across the apps, layout etc
+lib                          contain functions that transformed markdown to react props
+pages/                       page and api dir
+|- posts                     posts pages eg http://localhost:3000/posts/***
+|  |- [id].js                dynamic routes and pages http://localhost:3000/posts/[id] where id is defined in the [id].js
+|- _app.js                   This App component is the top-level component which will be common across all the different pages it is used for applying global css styles to.
+|- index.js                  Home route of the app (the page that will be shown on http://localhost:3000/)
+|- posts                     Markdown files blog contents
+public/                      コンパイルされた静的ファイル　compiled static file img etc
+styles/                      global styles directory like global css and utils css
+|- global.css                usually for html css like body padding anchor global image css
+|- util.module.css           usually for html css for fonts like font size heading etc
+postcss.config.css           Next.js compiles CSS for its built-in CSS support using PostCSS.
+tailwind.config.css          tailwind css config file
+
+</pre>
+
+## start the app
+```
+npm install
+npm run dev
+```
+
 
 ## Styling 
 In Next.js, you should import global CSS files by importing them to pages/_app.js. You cannot import global CSS anywhere else.
@@ -48,5 +76,8 @@ export async function getServerSideProps(context) {
 - `getServerSideProps(contenxt)` & `getStaticProps(props)` will be called automatically by nextjs on creating component so no need to called manually
 
 
-<!-- THINGS TO LEARN NEXT -->
+## deploy page
+https://vercel.com/eihsan94
+
+## THINGS TO LEARN NEXT 
 https://nextjs.org/learn/basics/deploying-nextjs-app/finally

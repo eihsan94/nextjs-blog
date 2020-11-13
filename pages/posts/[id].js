@@ -25,11 +25,11 @@ export default function Post({ postData }) {
       </Layout>
     )
 }
-
+// will change the path to the path with the id from markdown file name
 export async function getStaticPaths() {
     const paths = getAllPostIds()
     return {
-      paths,
+      paths, // eg http://localhost:3000/posts/ssg-ssr
       fallback: false 
         // If fallback is false, then any paths not returned by getStaticPaths will result in a 404 page.
         // If fallback is true, then the behavior of getStaticProps changes:
